@@ -136,5 +136,34 @@ Typical onCreate() workflow:
 -- Set content view
 -- Initialize UI elements
 -- Link UI elements to code actions
+```
+```
+Step 3 - Package Application
+-- System packages application components & resources into .apk file.
+-- Developers specify required application information in a file called androidmanifest.xml
 
+androidmanifest.xml
+-- Includes:
+Application name
+Components
+Required Permissions
+Application features
+Minimum API level
+```
+```
+Step 4 - Install & Run Application
+1. From Eclipse:
+Run in the emulator or device
+2. From command line:
+Enable USB debugging on the device
+Settings -> Applications -> Development -> USB Debugging
+%adb install <path_to_apk>
+
+Question:
+Which of the following are examples of element tags that you might find in an AndroidManifest.xml file? 
+See: 
+http://developer.android.com/guide/topics/manifest/manifest-intro.html
+Answers:
+<application>
+<uses-sdk>
 ```
