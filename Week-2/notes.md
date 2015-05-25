@@ -111,4 +111,30 @@ Question:
 In which level of the Android Platform would you find the Activity, Service, BroadcastReceiver and ContentProvider classes?
 Answer:
 The Application Framework Layer
+
+User Interface Layout:
+-- UI Layout specified in XML files
+-- Some tools allow visual layout
+-- XML files stored in res/layout/*.xml
+-- Accessed in Java as: R.layout.layout_name
+-- Accessed by other resources as: @layout/layout_name
+
+Using multiple layout files:
+-- Specifies different layout files based on your device orientation, screen size, etc.
+
+R.java
+-- At compilation time, resources are used to generate the R.java class.
+-- Java code uses the R class to access resources.
+```
+```
+Step 2 - Implement Application Classes
+-- Usually involves atleast one activity.
+-- Activity initialization code usually in onCreate()
+
+Typical onCreate() workflow:
+-- Restore saved state
+-- Set content view
+-- Initialize UI elements
+-- Link UI elements to code actions
+
 ```
