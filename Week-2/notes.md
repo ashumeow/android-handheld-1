@@ -66,3 +66,49 @@ ContentProviders can perform interprocess communication.
 ContentProviders encapsulate data sets. 
 Android supports several system-wide ContentProviders.
 ```
+```
+Question:
+Which one of the four fundamental components of Android applications is designed to provide an interface to the user?
+Answer:
+Activity
+```
+![](http://geekresearchlab.net/coursera/android-handheld-1/app.jpg)
+```
+Creating an Android App:
+Step 1 - Define Resources
+Step 2 - Implement Application Classes
+Step 3 - Package Application
+Step 4 - Install & Run Application
+```
+```
+Step 1 - Defining Resources
+-- Resources are non-source code entities.
+-- Eg. Layout, Strings, Images, Menus and Animations.
+-- Allows apps to be customized for different devices and users.
+-- Details: 
+http://developer.android.com/guide/topics/resources
+
+Strings
+-- Types: String, String Array, Plurals.
+-- Typically stored in res/values/*.xml
+-- Speciified in XML
+Eg. <string name="hello">Hello World!</string>
+-- Includes formatting and styling.
+-- Accessed by other resources as: @string/string_name
+-- Accessed in Java as: R.string.string_name
+
+Question:
+Resources are non-source code entities within your application. 
+Which of the following statements capture advantages of using resources, rather than managing entities directly within application source code?
+Answers:
+a. Resources can be changed without recompiling source code.
+b. Sets of resources can be created for different devices, user preferences and devices configurations.
+
+Customizing Strings:
+-- If your default language is French: @string/location_string
+
+Question:
+In which level of the Android Platform would you find the Activity, Service, BroadcastReceiver and ContentProvider classes?
+Answer:
+The Application Framework Layer
+```
